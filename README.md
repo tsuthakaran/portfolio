@@ -1,0 +1,1 @@
+Portfolio Project. A webpage including information about myself and my programming journey. Will also include a basic blog functionality. Will allow verfied users to post and allow all users to view posts. 
