@@ -25,21 +25,61 @@
     </nav>
     <article>
         <section id="about_me">
-            <figure>
-                <img src="images/keeth.jpeg" alt="Tharenkeeth Suthakaran">
-                <figcaption>
-                    <!-- linkedIn photo link -->
-                    <!-- github photo link -->
-                </figcaption>
-            </figure>
-            <h2>Tharenkeeth Suthakaran</h2>
-            <p>I am currently a first year student of Computer Science at Queen Mary University London. I'm passionate about technology and currently focused on learning software development and web design and am also interested in Machine Learning Arfitical Intelligence. My ultimate goal is to pursue a career in the software industry, where I can apply my skills to contribute to innovative projects.</p>
+            <h3>About Me</h3>
+            <div>
+                <figure>
+                    <img src="images/keeth.jpeg" alt="Tharenkeeth Suthakaran">
+                    <figcaption>
+                        <!-- linkedIn photo link -->
+                        <!-- github photo link -->
+                    </figcaption>
+                </figure>
+            </div>
+            <div>
+                <h2>Tharenkeeth Suthakaran</h2>
+                <p>I am currently a first year student of Computer Science at Queen Mary University London. I'm passionate about technology and currently focused on learning software development and web design and am also interested in Machine Learning Arfitical Intelligence. My ultimate goal is to pursue a career in the software industry, where I can apply my skills to contribute to innovative projects.</p>
+            </div>
         </section>
-        <section id="skills"></section>
-        <section id="education"></section>
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>Java</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h3>Education</h3>
+            <ul>
+                <li>Queen Mary University of London</li>
+                <li>University College London</li>
+            </ul>
+        </section>
         <section id="experience"></section>
-        <section id="portfolio"></section>
-        <section id="contact"></section>
+        <section id="portfolio">
+            <h3>Portfolio</h3>
+            <ul>
+                <li>Fantasy Football Simulator</li>
+                <li>Portfolio Website</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <ul>
+                <h4>Email</h4>
+                <li>tharenkeethsuthakaran@gmail.com</li>
+            </ul>
+            <h4>or contact me using this form</h4>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </article>
     <aside id="blog">
         <!-- Blog will go in aside -->
