@@ -4,43 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Styles -->
     <link rel="reset" href="css/reset.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Tharenkeeth Suthakaran</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about_me">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-    </nav>
-    <article>
-        <section id="about_me">
-            <h3>About Me</h3>
-            <div>
-                <figure>
-                    <img src="images/keeth.jpeg" alt="Tharenkeeth Suthakaran">
+        <div id="navbar">
+            <div id="header_name">
+                <a href="#homepage"><h2>Tharenkeeth Suthakaran</h2></a>
+            </div>
+            <nav id="header_nav">
+                <ul id="navbar_items">
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article>
+            <section id="home">
+                <figure id="homepage">
+                    <div id="main_photo">
+                        <img src="images/keeth.jpeg" alt="Tharenkeeth Suthakaran">
+                    </div>
                     <figcaption>
-                        <!-- linkedIn photo link -->
-                        <!-- github photo link -->
+                        <h1>Tharenkeeth Suthakaran</h1>
+                        <div class="socials">
+                            <a href="linkedin.com/in/tharenkeeth-suthakaran-9981862a5"><img src="images/linkedin-64_green.png" alt="LinkedIn"></a>
+                            <a href="https://github.com/tsuthakaran"><img src="images/github-11-64_green.png" alt="GitHub"></a>
+                        </div>
+                        <a id="enter_button" href="#pages">Enter Portfolio</a>
                     </figcaption>
                 </figure>
-            </div>
-            <div>
-                <h2>Tharenkeeth Suthakaran</h2>
-                <p>I am currently a first year student of Computer Science at Queen Mary University London. I'm passionate about technology and currently focused on learning software development and web design and am also interested in Machine Learning Arfitical Intelligence. My ultimate goal is to pursue a career in the software industry, where I can apply my skills to contribute to innovative projects.</p>
+            </section>
+        </article>
+    </header>
+    <article id="pages">
+        <section id="about_me" class="page">
+            <h3>About Me</h3>
+            <div class="section_container">
+                <div id="about_me_photo">
+                    <img src="images/keeth2.jpg" alt="Tharenkeeth Suthakaran">
+                </div>
+                <div id="about_me_text">
+                    <p>I am currently a first year student of Computer Science at Queen Mary University London. I'm passionate about technology and currently focused on learning software development and web design and am also interested in Machine Learning Arfitical Intelligence. My ultimate goal is to pursue a career in the software industry, where I can apply my skills to contribute to innovative projects.</p>
+                </div>
             </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="page">
             <h3>Skills</h3>
             <ul>
                 <li>HTML/CSS</li>
@@ -48,22 +69,22 @@
                 <li>Git</li>
             </ul>
         </section>
-        <section id="education">
+        <section id="education" class="page">
             <h3>Education</h3>
             <ul>
                 <li>Queen Mary University of London</li>
                 <li>University College London</li>
             </ul>
         </section>
-        <section id="experience"></section>
-        <section id="portfolio">
+        <section id="experience" class="page"></section>
+        <section id="portfolio" class="page">
             <h3>Portfolio</h3>
             <ul>
                 <li>Fantasy Football Simulator</li>
                 <li>Portfolio Website</li>
             </ul>
         </section>
-        <section id="contact">
+        <section id="contact" class="page">
             <h3>Contact Me</h3>
             <ul>
                 <h4>Email</h4>

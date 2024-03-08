@@ -1,4 +1,188 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 img {    
     max-width: 200px;
     height: auto;
 }
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    top: 0;
+}
+
+#header_name {
+    width: 35%;
+    text-align: center;
+    padding-left: 4cqmin;
+    padding-right: 20px;
+}
+
+#header_nav {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+
+#navbar_items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+#navbar_items li {
+    list-style-type: none;
+    margin: 0 10px;
+    align-items: center;    
+    display: flex;
+}
+
+#navbar_items li a{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #feb902;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ #home {
+    height: 100vh;
+    display:grid;
+    align-content: center;
+ }
+
+ #homepage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ figcaption {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #main_photo img{
+    border-radius: 250px;
+ }
+
+ h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 20px;
+ }
+
+ h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    margin: 0;
+    color: #3fa63b;
+ }
+
+ h3 {
+    text-align: center;
+    background-color: #fb876e;
+    padding: 20px;
+    color: #3fa63b;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0;
+    border: 0;
+ }
+
+ p {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+ }
+
+ #enter_button {
+    color: white;
+    background-color: #fb876e;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    align-self: center;
+ }
+
+ #pages {
+    padding: 0;
+ }
+
+ section {
+    height: 93vh;
+    padding: 0;
+ }
+
+
+ .section_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+ }
+
+ .socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+ }
+
+ .socials a img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 0%;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+
+ .section_container div {
+    width: 100%;
+    height: 100%;
+ }
+
+ .page {
+    background-color: #3fa63b;
+    ;
+ }
+ #about_me_photo  {
+    text-align: end;
+    padding: 60px;
+ }
+ #about_me_photo img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 40px;
+    padding: 30px;
+ }
+ #about_me_text p {
+    padding: 60px;
+ }
