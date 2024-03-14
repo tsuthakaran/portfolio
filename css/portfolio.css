@@ -1,11 +1,60 @@
 body {
     background-color: black;
-    color: white;
+    color: var(--title-color);
 }
+
+:root {
+    --primary-color: #d80505;
+    --secondary-color: #feb902; 
+    --background-color: #000000; 
+    --title-color: #ffffff;  
+  }
 
 img {    
     max-width: 200px;
     height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+h3 {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    color: var(--primary-color);
+    font-family: "Pacifico", cursive;
+    font-weight: 4   00;
+    font-style: normal;
+    font-size: 60px;
+    margin: 0;
+    border: 0;
+}
+
+p {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
 }
 
 #navbar {
@@ -13,7 +62,7 @@ img {
     justify-content: space-between;
     width: 100%;
     position: fixed;
-    background-color: black;
+    background-color: var(--background-color);
     top: 0;
 }
 
@@ -46,82 +95,55 @@ img {
     display: flex;
 }
 
-#navbar_items li a{
+#navbar_items li a {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    color: #feb902;
+    color: var(--secondary-color);
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
- #home {
+#home {
     height: 100vh;
     display:grid;
     align-content: center;
- }
+}
 
- #homepage {
+#homepage {
     text-align: center;
     display: flex;
     flex-direction: column;
- }
+}
 
- figcaption {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
- }
-
- #main_photo img{
+#main_photo img {
     border-radius: 250px;
- }
+}
 
- h1 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 100px;
-    color: white;
-    margin-bottom: 20px;
- }
-
- h2 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    margin: 0;
-    color: #3fa63b;
- }
-
- h3 {
+figcaption {
     text-align: center;
-    background-color: #fb876e;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 20px;
-    color: #3fa63b;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-    margin: 0;
-    border: 0;
- }
+}
 
- p {
-    font-family: "DM Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
- }
+.socials a img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 0%;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
- #enter_button {
-    color: white;
-    background-color: #fb876e;
+#enter_button {
+    color: var(--title-color);
+    background-color: var(--primary-color);
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -129,60 +151,45 @@ a {
     border-radius: 20px;
     padding: 10px 20px;
     align-self: center;
- }
+    margin-bottom: 20px;
+}
 
- #pages {
-    padding: 0;
- }
+.page {
+    background-color: var(--background-color);
+}
 
- section {
+section {
     height: 93vh;
     padding: 0;
- }
+}
 
-
- .section_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
- }
-
- .socials {
+.section_container {
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding: 20px;
- }
+    align-items: center;
+}
 
- .socials a img {
-    max-width: 50px;
-    height: auto;
-    border-radius: 0%;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
- }
+#about_me .section_container {
+    flex-direction: column;
+}
 
- .section_container div {
+.section_container div {
     width: 100%;
     height: 100%;
- }
+}
 
- .page {
-    background-color: #3fa63b;
-    ;
- }
- #about_me_photo  {
-    text-align: end;
-    padding: 60px;
- }
- #about_me_photo img {
+#about_me_photo {
+    text-align: center;
+}
+
+#about_me_photo img {
     max-width: 400px;
     height: auto;
-    border-radius: 40px;
-    padding: 30px;
- }
- #about_me_text p {
-    padding: 60px;
- }
+    padding: 40px;
+}
+
+#about_me_text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
