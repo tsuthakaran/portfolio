@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #d80505;
+    --secondary-color: #feb902; 
+    --background-color: #000000; 
+    --title-color: #ffffff;  
+}
+
+#sidebar {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    background-color: var(--secondary-color);
+}
+
+#logo a h2 {
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+#header_nav {
+    color: var(--secondary-color);
+    width: 100%;
+}
+
+#navbar_items {
+    padding: 0;
+    background-color: var(--background-color);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0;
+}
+
+#navbar_items li a {
+    color: var(--secondary-color);
+}
+
+#blogbar {
+    height: 100%;
+}
+
+#blogbar h3 {
+    background-color: var(--secondary-color);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#buttons a {
+    margin: 2%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    position: absolute
+}
+
+#footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#footer_links a {
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+
+#copyright {
+    width: 100%;
+    color: var(--background-color);
+    text-align: center;
+}
+
+
+#blog_container {
+    margin-left: 40%;
+    padding: 3%;
+    padding-top: 5%;
+} 
+
+.blog_post {
+    margin-bottom: 5%;
+    border-top: var(--secondary-color) solid 2px;
+    border-bottom: var(--secondary-color) solid 2px;
+
+}
+
+h4 {
+    padding: 0;
+}
+
+.time {
+    color: var(--primary-color);
+    text-align: end;
+}
